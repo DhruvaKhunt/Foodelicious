@@ -1,0 +1,134 @@
+.navbar {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  width: 150px;
+  font-size: 40px;
+  color: rgba(91, 154, 213);
+  font-family: Josefin Sans;
+  font-weight: 1000;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  color: rgb(237, 125, 49);
+  font-size: 18px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar button {
+  background: transparent;
+  font-size: 16px;
+  color: rgb(11, 35, 58);
+  border: 1px solid rgba(91, 154, 213);
+  padding: 10px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.navbar button:hover {
+  background-color: rgba(91, 154, 213, 0.425);
+  transition: 0.3s;
+}
+
+.navbar .active {
+  padding-bottom: 3px;
+  border-bottom: 2px solid rgb(237, 125, 49);
+}
+
+.navbar li {
+  cursor: pointer;
+}
+
+.navbar-search-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.navbar-cart-icon {
+  position: relative;
+}
+
+.navbar-cart-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.navbar-cart-icon .dot {
+  position: absolute;
+  min-width: 10px;
+  min-height: 10px;
+  background-color: tomato;
+  border-radius: 5px;
+  top: -8px;
+  right: -8px;
+}
+
+@media (max-width: 1050px) {
+  .navbar .logo {
+    width: 140px;
+    font-size: 40px;
+  }
+  .navbar-menu {
+    gap: 20px;
+    font-size: 17px;
+  }
+  .navbar-right {
+    gap: 30px;
+  }
+  .navbar-right img {
+    width: 22px;
+  }
+  .navbar-right button {
+    padding: 8px 25px;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar .logo {
+    width: 120px;
+  }
+  .navbar-menu {
+    gap: 15px;
+    font-size: 16px;
+  }
+  .navbar-right {
+    gap: 20px;
+  }
+  .navbar-right img {
+    width: 20px;
+  }
+  .navbar-right button {
+    padding: 7px 20px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 875px) {
+  .navbar-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .navbar .logo {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 360px) {
+  .navbar .logo {
+    font-size: 21px;
+  }
+}
